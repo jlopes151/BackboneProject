@@ -1,1 +1,1 @@
-#not sure what goes in here
+Ok this readme describs the project. My intention is to use this to fleah out a prototype project that gives me the chance to get up to speed with Backbone.
