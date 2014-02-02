@@ -24,7 +24,7 @@ $(function () {
 
 		// Instead of generating a new element, bind to the existing skeleton of
 		// the App already present in the HTML.
-		el: '#todoapp',
+		el: '#content',
 
 		hw_tpl: Handlebars.compile($('#mainpage-template').html()),
 	

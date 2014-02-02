@@ -19,11 +19,20 @@
 		<script src="js/routers/router.js"></script>
 		<script src="js/app.js"></script>
 		<div id="todoapp">
-			<header id="header"></header>
-			<script type="text/template" id="mainpage-template">
+			<div id="header" style="hieght: 10px">
+				<a href=#>One</a>
+				<a href=#>Two</a>
+				<a href=#>Three</a>
+			</div>
+			<div id="content">
+				<script type="text/template" id="mainpage-template">
 				<div id="main">{{title}}</div>
 			</script>
-			<div id="footer"></div>
+			</div>
+			<div id="footer">
+				<label style="float: left">Status</label>
+				<label style="float: right">Date Time</label>
+			</div>
 		</div>
 	</body>
 </html>
