@@ -8,6 +8,14 @@ $(function () {
 	'use strict';
 	console.log('Createing the app instance.');
 	
+	var MainPage = Backbone.Model.extend({
+		defaults: {
+			title: 'This is the Main page'
+		}
+	});
+	
+	var mainPage = new MainPage();
+	
 	// The Application
 	// ---------------
 
@@ -18,7 +26,7 @@ $(function () {
 		// the App already present in the HTML.
 		el: '#todoapp',
 
-		hw_tpl: _.template('Hello World!'),
+		hw_tpl: Handlebars.compile($('#mainpage-template').html()),
 	
 		// At initialization we bind to the relevant events on the `Todos`
 		// collection, when items are added or changed. Kick things off by
@@ -30,8 +38,9 @@ $(function () {
 		// Re-rendering the App just means refreshing the statistics -- the rest
 		// of the app doesn't change.
 		render: function () {
-			this.$el.html(this.hw_tpl());
-			console.log('render the view.');			
+			this.$el.html(this.hw_tpl(this.model.toJSON()));
+			console.log('render the view.');
+			console.log('The model title ' + this.model.toJSON());
 			return this;
 		},
 
@@ -45,7 +54,7 @@ $(function () {
 
 	});
 	
-	new app.AppView().render();
+	new app.AppView({model: mainPage}).render();
 	
 	console.log('The app view is initialized!');
 

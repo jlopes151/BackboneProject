@@ -7,11 +7,6 @@
 		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
 	</head>
 	<body>
-		<div id="todoapp">
-			<header id="header"></header>
-			<div id="main"></div>
-			<div id="footer"></div>
-		</div>
 		<script src="js/lib/jquery-2.0.3.js"></script>
 		<script src="js/lib/underscore-min.js"></script>
 		<script src="js/lib/handlebars-v1.3.0.js"></script>
@@ -23,6 +18,13 @@
 		<script src="js/views/app-view.js"></script>
 		<script src="js/routers/router.js"></script>
 		<script src="js/app.js"></script>
+		<div id="todoapp">
+			<header id="header"></header>
+			<script type="text/template" id="mainpage-template">
+				<div id="main">{{title}}</div>
+			</script>
+			<div id="footer"></div>
+		</div>
 	</body>
 </html>
 
