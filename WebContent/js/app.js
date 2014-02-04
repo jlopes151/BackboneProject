@@ -16,6 +16,13 @@ $(function () {
 	
 	var mainPage = new MainPage();
 	
+	// quick add of an attribute using map with a single entry
+	mainPage.set({book: 'Maven Review'});
+	// another 
+	mainPage.set('animal', 'Horse');
+	
+	console.log(JSON.stringify(mainPage));
+	
 	// The Application
 	// ---------------
 

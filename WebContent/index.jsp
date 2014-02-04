@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Backbone.js • Project</title>
 		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<script src="js/lib/jquery-2.0.3.js"></script>
@@ -19,10 +20,21 @@
 		<script src="js/routers/router.js"></script>
 		<script src="js/app.js"></script>
 		<div id="todoapp">
-			<div id="header" style="hieght: 10px">
-				<a href=#>One</a>
-				<a href=#>Two</a>
-				<a href=#>Three</a>
+			<div id="header">
+				<div id="banner" class="bannerClass" >
+					<table style="hieght: 200px">
+						<tr>
+							<td>
+								<img src="image/emoticonCool.gif">
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="mainMenu">
+					<a href=#>One</a>
+					<a href=#>Two</a>
+					<a href=#>Three</a>
+				</div>
 			</div>
 			<div id="content">
 				<script type="text/template" id="mainpage-template">
