@@ -21,14 +21,8 @@
 		<script src="js/app.js"></script>
 		<div id="todoapp">
 			<div id="header">
-				<div id="banner" class="bannerClass" >
-					<table style="hieght: 200px">
-						<tr>
-							<td>
-								<img src="image/emoticonCool.gif">
-							</td>
-						</tr>
-					</table>
+				<div id="banner" class="bannerClass">
+					<img src="image/emoticonCool.gif">
 				</div>
 				<div id="mainMenu">
 					<a href=#>One</a>
