@@ -6,6 +6,7 @@
 		<title>Backbone.js • Project</title>
 		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
 		<link rel="stylesheet" href="css/main.css">
+		<title>Backbone Proto Using Handlebar JS</title>
 	</head>
 	<body>
 		<script src="js/lib/jquery-2.0.3.js"></script>
